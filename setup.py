@@ -2,10 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name="gohApibeta",
-    version="0.1.0",
-    packages=find_packages(),
-    install_requires=["g4f"],
+    version="0.1.1",  # обновите версию
     author="GohHacked",
-    description="Обёртка для gpt с удобным интерфейсом",
-    python_requires=">=3.7",
+    description="GPT client library",
+    packages=find_packages(),
+    install_requires=[
+        "requests",  # и другие зависимости
+    ],
+    python_requires='>=3.7',
 )
